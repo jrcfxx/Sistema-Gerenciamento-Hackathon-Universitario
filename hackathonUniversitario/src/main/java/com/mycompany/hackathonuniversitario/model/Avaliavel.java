@@ -9,5 +9,6 @@ package com.mycompany.hackathonuniversitario.model;
  * @author Júlia
  */
 public interface Avaliavel {
-    
+
+    void calcularNotaFinal();
 }

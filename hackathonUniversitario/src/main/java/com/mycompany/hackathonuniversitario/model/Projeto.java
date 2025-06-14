@@ -10,7 +10,35 @@ package com.mycompany.hackathonuniversitario.model;
  */
 public class Projeto {
 
+    private String titulo;
     private Profissional orientador;
     private Equipe equipe;
     private int notaFinal;
+
+    public Projeto(String titulo, Profissional orientador, Equipe equipe) {
+        this.titulo = titulo;
+        this.orientador = orientador;
+        this.equipe = equipe;
+        this.notaFinal = 0;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public Profissional getOrientador() {
+        return orientador;
+    }
+
+    public Equipe getEquipe() {
+        return equipe;
+    }
+
+    public int getNotaFinal() {
+        return notaFinal;
+    }
+
+    public void setNotaFinal(int notaFinal) {
+        this.notaFinal = notaFinal;
+    }
 }

@@ -10,6 +10,29 @@ package com.mycompany.hackathonuniversitario.model;
  */
 public class Pessoa {
 
+    private String nome;
+    private String cpf;
     private Instituicao instituicao;
 
+    public Pessoa(String nome, String cpf, Instituicao instituicao) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.instituicao = instituicao;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public Instituicao getInstituicao() {
+        return instituicao;
+    }
+
+    public void setInstituicao(Instituicao instituicao) {
+        this.instituicao = instituicao;
+    }
 }

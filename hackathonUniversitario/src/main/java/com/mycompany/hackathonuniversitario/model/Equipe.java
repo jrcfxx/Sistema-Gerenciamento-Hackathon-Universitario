@@ -4,6 +4,7 @@
  */
 package com.mycompany.hackathonuniversitario.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -11,7 +12,24 @@ import java.util.List;
  * @author Júlia
  */
 public class Equipe {
-    
+
+    private String nome;
     private List<Estudante> membros;
-    
+
+    public Equipe(String nome) {
+        this.nome = nome;
+        this.membros = new ArrayList<>();
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public List<Estudante> getMembros() {
+        return membros;
+    }
+
+    public void adicionarMembro(Estudante estudante) {
+        membros.add(estudante);
+    }
 }

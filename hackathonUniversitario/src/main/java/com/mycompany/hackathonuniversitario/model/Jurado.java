@@ -10,4 +10,7 @@ package com.mycompany.hackathonuniversitario.model;
  */
 public class Jurado extends Profissional {
 
+    public Jurado(String nome, String cpf, Instituicao instituicao, String areaDeAtuacao) {
+        super(nome, cpf, instituicao, areaDeAtuacao);
+    }
 }

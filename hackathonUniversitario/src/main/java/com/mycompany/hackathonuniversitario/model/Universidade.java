@@ -10,4 +10,7 @@ package com.mycompany.hackathonuniversitario.model;
  */
 public class Universidade extends Instituicao {
 
+    public Universidade(String nome, String sigla, String cidade, String estado) {
+        super(nome, sigla, cidade, estado);
+    }
 }

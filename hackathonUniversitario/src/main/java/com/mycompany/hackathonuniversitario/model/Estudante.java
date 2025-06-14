@@ -9,5 +9,8 @@ package com.mycompany.hackathonuniversitario.model;
  * @author Júlia
  */
 public class Estudante extends Pessoa {
-    
+
+    public Estudante(String nome, String cpf, Instituicao instituicao) {
+        super(nome, cpf, instituicao);
+    }
 }

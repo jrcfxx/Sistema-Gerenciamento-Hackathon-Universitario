@@ -4,6 +4,7 @@
  */
 package com.mycompany.hackathonuniversitario.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,4 +19,35 @@ public class Instituicao {
     private String estado;
     private List<Equipe> equipes;
 
+    public Instituicao(String nome, String sigla, String cidade, String estado) {
+        this.nome = nome;
+        this.sigla = sigla;
+        this.cidade = cidade;
+        this.estado = estado;
+        this.equipes = new ArrayList<>();
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getSigla() {
+        return sigla;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public List<Equipe> getEquipes() {
+        return equipes;
+    }
+
+    public void adicionarEquipe(Equipe equipe) {
+        equipes.add(equipe);
+    }
 }
