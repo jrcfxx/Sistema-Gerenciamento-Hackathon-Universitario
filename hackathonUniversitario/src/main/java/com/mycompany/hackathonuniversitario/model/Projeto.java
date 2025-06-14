@@ -13,7 +13,7 @@ public class Projeto {
     private String titulo;
     private Profissional orientador;
     private Equipe equipe;
-    private int notaFinal;
+    private double notaFinal;
 
     public Projeto(String titulo, Profissional orientador, Equipe equipe) {
         this.titulo = titulo;
@@ -34,11 +34,11 @@ public class Projeto {
         return equipe;
     }
 
-    public int getNotaFinal() {
+    public double getNotaFinal() {
         return notaFinal;
     }
 
-    public void setNotaFinal(int notaFinal) {
+    public void setNotaFinal(double notaFinal) {
         this.notaFinal = notaFinal;
     }
 }

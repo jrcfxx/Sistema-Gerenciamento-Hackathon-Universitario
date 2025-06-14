@@ -37,7 +37,7 @@ public class Banca implements Avaliavel {
         }
 
         int somaNotas = jurados.values().stream().mapToInt(Integer::intValue).sum();
-        int media = Math.round((float) somaNotas / jurados.size());
+        double media = (double) somaNotas / jurados.size();
 
         projetoAvaliado.setNotaFinal(media);
 

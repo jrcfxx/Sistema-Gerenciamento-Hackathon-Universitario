@@ -74,11 +74,17 @@ public class HackathonUniversitario {
         apresentacao1.avaliar();
         apresentacao2.avaliar();
 
+        System.out.println("\n===============================================");
+        System.out.println("         RESULTADO DOS PROJETOS APROVADOS       ");
+        System.out.println("===============================================");
+
         // Lista os projetos com nota final ≥ 7 (usar stream).
         System.out.println("\nProjetos aprovados (nota >= 7):");
         Apresentacoes.getInstancia().getTodasApresentacoes().stream()
                 .filter(a -> a.getProjeto().getNotaFinal() >= 7)
                 .forEach(a -> System.out
                         .println(a.getProjeto().getTitulo() + " - Nota: " + a.getProjeto().getNotaFinal()));
+
+        System.out.println("===============================================\n");
     }
 }
