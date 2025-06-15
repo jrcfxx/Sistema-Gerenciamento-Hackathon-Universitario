@@ -22,6 +22,9 @@ O objetivo é organizar o processo de avaliação dos projetos de forma simples 
 - Orientação a Objetos
 - Collections do Java (List, Map)
 
+## Professor orientador
+- Daniel Pimentel Kansaon
+
 ## Como executar
 
 1. Clone o repositório:
