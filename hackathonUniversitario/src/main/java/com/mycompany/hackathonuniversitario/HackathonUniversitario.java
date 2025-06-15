@@ -41,22 +41,24 @@ public class HackathonUniversitario {
         Map<Jurado, Integer> notasBanca1 = new HashMap<>();
         Map<Jurado, Integer> notasBanca2 = new HashMap<>();
 
+        // Random gera nota entre 5 a 10
         for (int i = 1; i <= 4; i++) {
             Jurado jurado = new Jurado(
                     "Jurado Daniel" + i,
                     "444.444.444-0" + i,
                     new Empresa("Empresa Legal", "EL", "Belo Horizonte", "MG", "Tecnologia"),
                     "Tecnologia");
-            notasBanca1.put(jurado, new Random().nextInt(4) + 7);
+            notasBanca1.put(jurado, new Random().nextInt(6) + 5);
         }
 
+        // Random gera nota entre 5 a 10
         for (int i = 1; i <= 4; i++) {
             Jurado jurado = new Jurado(
                     "Jurado Daniel 2" + i,
                     "555.555.555-0" + i,
                     new Empresa("Empresa Sensacional", "ES", "Belo Horizonte", "MG", "Inovação"),
                     "Inovação");
-            notasBanca2.put(jurado, new Random().nextInt(4) + 5);
+            notasBanca2.put(jurado, new Random().nextInt(6) + 5);
         }
 
         Banca banca1 = new Banca(projeto1, notasBanca1);
