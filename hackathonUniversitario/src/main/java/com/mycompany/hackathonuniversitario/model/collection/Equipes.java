@@ -22,6 +22,12 @@ public class Equipes {
     }
 
     public static Equipes getInstancia() {
+        /*
+         * [CODE REVIEW #15 - Singleton thread-safety]
+         * Lazy initialization sem sincronizacao. Em ambiente multithread, duas
+         * instancias podem ser criadas. Sugestao: Initialization-on-demand holder idiom.
+         * Mesmo problema em Apresentacoes, Projetos, Bancas e Salas.
+         */
         if (instancia == null) {
             instancia = new Equipes();
         }
@@ -33,12 +39,22 @@ public class Equipes {
     }
 
     public Equipe buscarPorNome(String nome) {
+        /*
+         * [CODE REVIEW #16 - Retorno nulo]
+         * Retorna null quando nao encontra. Sugestao: usar Optional<Equipe> como
+         * ja feito em Salas.buscarPorId() para evitar NullPointerException.
+         */
         return listaEquipes.stream()
                 .filter(e -> e.getNome().equalsIgnoreCase(nome))
                 .findFirst()
                 .orElse(null);
     }
 
+    /*
+     * [CODE REVIEW #17 - Vazamento de encapsulamento]
+     * Retorna referencia direta da lista interna. Codigo externo pode alterar
+     * sem passar por adicionarEquipe(). Sugestao: Collections.unmodifiableList().
+     */
     public List<Equipe> getTodasEquipes() {
         return listaEquipes;
     }

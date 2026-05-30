@@ -30,6 +30,11 @@ public class Equipe {
     }
 
     public void adicionarMembro(Estudante estudante) {
+        /*
+         * [CODE REVIEW #20 - Regra de negocio]
+         * Nao valida limite de membros nem duplicatas. Sugestao: definir MAX_MEMBROS
+         * e lancar IllegalStateException ao exceder o limite da equipe.
+         */
         membros.add(estudante);
     }
 }

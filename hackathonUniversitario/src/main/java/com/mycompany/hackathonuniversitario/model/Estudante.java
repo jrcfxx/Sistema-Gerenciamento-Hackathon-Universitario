@@ -10,6 +10,11 @@ package com.mycompany.hackathonuniversitario.model;
  */
 public class Estudante extends Pessoa {
 
+    /*
+     * [CODE REVIEW #23 - Marker class]
+     * Subclasse nao adiciona atributos nem comportamento. Alternativas: enum
+     * TipoPessoa ou atributo Role em Pessoa. Se mantiver heranca, documentar intencao.
+     */
     public Estudante(String nome, String cpf, Instituicao instituicao) {
         super(nome, cpf, instituicao);
     }

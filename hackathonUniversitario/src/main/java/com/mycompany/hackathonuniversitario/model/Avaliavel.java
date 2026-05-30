@@ -10,5 +10,10 @@ package com.mycompany.hackathonuniversitario.model;
  */
 public interface Avaliavel {
 
+    /*
+     * [CODE REVIEW #22 - Contrato da interface]
+     * Retorno void dificulta testar o resultado sem inspecionar estado mutado de
+     * outras entidades. Sugestao: double calcularNotaFinal() retornando a media.
+     */
     void calcularNotaFinal();
 }

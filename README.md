@@ -18,6 +18,7 @@ O objetivo é organizar o processo de avaliação dos projetos de forma simples 
 
 ## Tecnologias
 
+<!-- [CODE REVIEW #28] README informa Java 11+, mas pom.xml compila com Java 1.8. Alinhar documentacao. -->
 - Java 11+
 - Orientação a Objetos
 - Collections do Java (List, Map)
@@ -30,4 +31,10 @@ O objetivo é organizar o processo de avaliação dos projetos de forma simples 
 1. Clone o repositório:
 
 ```bash
+<!-- [CODE REVIEW #29] URL de clone e placeholder (seu-usuario). Usar URL real do repositorio. -->
 git clone https://github.com/seu-usuario/hackathon-universitario.git
+```
+
+---
+
+> Branch `code-review-gabriel-lacerda`: aberta para atividade de code review. Este PR não deve ser mergeado.
