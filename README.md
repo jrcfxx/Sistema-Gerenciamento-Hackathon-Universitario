@@ -31,3 +31,8 @@ O objetivo é organizar o processo de avaliação dos projetos de forma simples 
 
 ```bash
 git clone https://github.com/seu-usuario/hackathon-universitario.git
+```
+
+---
+
+> Branch `code-review-gabriel-lacerda`: aberta para atividade de code review. Este PR não deve ser mergeado.
