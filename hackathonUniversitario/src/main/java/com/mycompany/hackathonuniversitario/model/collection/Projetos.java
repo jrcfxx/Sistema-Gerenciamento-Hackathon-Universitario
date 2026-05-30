@@ -15,6 +15,12 @@ import java.util.stream.Collectors;
  */
 public class Projetos {
 
+    /*
+     * [CODE REVIEW #24 - DRY / Padrao Repository]
+     * Cinco classes em model.collection repetem a mesma estrutura Singleton + ArrayList.
+     * Sugestao: classe generica SingletonRepository<T> ou interfaces Repository separadas
+     * para facilitar troca por JDBC/API no futuro.
+     */
     private static Projetos instancia;
     private List<Projeto> listaProjetos;
 

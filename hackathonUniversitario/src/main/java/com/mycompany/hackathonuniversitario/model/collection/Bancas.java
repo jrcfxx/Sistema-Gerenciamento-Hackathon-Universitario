@@ -15,6 +15,11 @@ import java.util.stream.Collectors;
  */
 public class Bancas {
 
+    /*
+     * [CODE REVIEW #30 - Codigo morto / subutilizado]
+     * Singleton Bancas existe com buscarPorProjeto(), mas HackathonUniversitario
+     * nunca registra bancas aqui. Sugestao: usar este repositorio no fluxo principal.
+     */
     private static Bancas instancia;
     private List<Banca> listaBancas;
 

@@ -34,6 +34,10 @@ public class Apresentacoes {
     }
 
     public List<Apresentacao> getTodasApresentacoes() {
+        /*
+         * [CODE REVIEW #25 - Vazamento de encapsulamento]
+         * Retorna lista interna mutavel. Sugestao: Collections.unmodifiableList().
+         */
         return listaApresentacoes;
     }
 

@@ -17,6 +17,12 @@ public class Instituicao {
     private String sigla;
     private String cidade;
     private String estado;
+    /*
+     * [CODE REVIEW #21 - Duas fontes de verdade]
+     * Instituicao mantem List<Equipe>, mas no fluxo principal equipes sao registradas
+     * apenas em Equipes.getInstancia(), sem chamar adicionarEquipe() aqui.
+     * Sugestao: associar equipe a instituicao ou remover esta lista.
+     */
     private List<Equipe> equipes;
 
     public Instituicao(String nome, String sigla, String cidade, String estado) {

@@ -39,6 +39,11 @@ public class Projeto {
     }
 
     public void setNotaFinal(double notaFinal) {
+        /*
+         * [CODE REVIEW #19 - Validacao de regra de negocio]
+         * Aceita qualquer valor (negativo ou acima de 10). Sugestao: validar
+         * if (notaFinal < 0 || notaFinal > 10) throw new IllegalArgumentException(...).
+         */
         this.notaFinal = notaFinal;
     }
 }

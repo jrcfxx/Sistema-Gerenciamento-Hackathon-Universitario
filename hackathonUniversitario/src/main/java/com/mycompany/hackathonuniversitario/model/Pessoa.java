@@ -14,6 +14,12 @@ public class Pessoa {
     private String cpf;
     private Instituicao instituicao;
 
+    /*
+     * [CODE REVIEW #18 - Validacao ausente]
+     * Nao ha validacao de nome, cpf ou instituicao. CPFs invalidos sao aceitos.
+     * Sugestao: validar no construtor e implementar equals/hashCode baseados no CPF
+     * (necessario para uso correto em HashMap, ex.: Map<Jurado, Integer> em Banca).
+     */
     public Pessoa(String nome, String cpf, Instituicao instituicao) {
         this.nome = nome;
         this.cpf = cpf;
